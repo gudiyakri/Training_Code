@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="5.0">
+  <display-name>servlet</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <!-- Servlet declaration -->
+  <servlet>
+    <servlet-name>FirstServlet</servlet-name>
+    <servlet-class>com.code.servlet.FirstServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>success</servlet-name>
+    <servlet-class>com.code.servlet.SuccessServlet</servlet-class>
+  </servlet>
+  
+  <!--Mapping  -->
+
+  <servlet-mapping>
+    <servlet-name>FirstServlet</servlet-name>
+    <url-pattern>/FirstServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>success</servlet-name>
+    <url-pattern>/success</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SecondServlet</servlet-name>
+    <servlet-class>com.code.servlet.SecondServlet</servlet-class>
+  </servlet>
+  
+    <servlet-mapping>
+    <servlet-name>SecondServlet</servlet-name>
+    <url-pattern>/SecondServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ThirdServlet</servlet-name>
+    <servlet-class>com.code.servlet.ThirdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ThirdServlet</servlet-name>
+    <url-pattern>/ThirdServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.code.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SuccessServlet</display-name>
+    <servlet-name>SuccessServlet</servlet-name>
+    <servlet-class>com.code.servlet.SuccessServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SuccessServlet</servlet-name>
+    <url-pattern>/SuccessServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

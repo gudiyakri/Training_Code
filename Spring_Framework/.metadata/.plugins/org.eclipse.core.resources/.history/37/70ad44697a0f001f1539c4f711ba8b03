@@ -1,0 +1,9 @@
+package com.springcore.javaconfig;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+	}
+
+}
